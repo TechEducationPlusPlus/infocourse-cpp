@@ -1,0 +1,23 @@
+block classes
+	- var homeclass = undefined
+	- var userclass = '.active'
+	- var chatclass = undefined
+	- var contactclass = undefined
+	- var aboutclass = undefined
+
+extends template
+
+block jumbotron
+
+block container
+	.container
+		.row
+			h1 User Page
+			form(action='/.cgi', method='get')
+				| Email: 
+				input(name='email', type='email')
+				br
+				input(name='type', value='user', type='hidden')
+				input(value='Submit', type='submit')
+
+

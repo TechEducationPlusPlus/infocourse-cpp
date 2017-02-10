@@ -1,0 +1,25 @@
+extends ../../../template
+
+block jumbotron
+
+block title
+	h1.display-3 C# :: Unit 1
+
+block container
+	.container
+		// Example row of columns
+		.row
+			.col-md-4
+				video#my-video(controls='', width='800', height='450', src='./unit1.mp4', type='video/mp4', style='padding: 0px 0px 0px; border: 0px solid black; margin: 0px 0px 0px 0px;')
+				script.
+					document.getElementById("my-video").defaultPlaybackRate = 1.0;
+					document.getElementById("my-video").play ();
+					function changespeed()
+					{
+						document.getElementById("my-video").playbackRate = document.getElementById ("slider1").value;
+						document.getElementById("slider1text").innerHTML = document.getElementById ("slider1").value;
+					}
+				#speed
+					// style="border: 1px solid black">
+					input#slider1(style='border: 1px solid black', type='range', min='0.1', max='4', step='0.1', onchange='changespeed();')
+					span#slider1text 1.0

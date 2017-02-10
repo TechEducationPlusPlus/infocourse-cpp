@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<title>Presentation</title>
+
+		<meta name="description" content="tsalex.tk / IT textbook / lesson 1">
+		<meta name="author" content="Alex Tsvetanov">
+
+		<link href="/presentations/reveal.js/css/impress-demo.css" rel="stylesheet">
+
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="shortcut icon" href="/favicon.png">
+
+
+		<link rel="stylesheet" href="/presentations/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="/presentations/reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/presentations/reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/presentations/reveal.js/css/print/pdf.css' : '/presentations/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<link href="/presentations/reveal.js/css/template.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<div class="head">
+						<div class="logo"></div><div class="title">Introduction to programming in C#</div>
+					</div>
+					<div class="body">
+						<center>
+<big>
+							<strong>Creating and Running Your First<br>C# Program</strong>
+</big>
+							<br>
+							<img style="height:400px;" src="./console.png">
+						</center>
+					</div>
+					<div class="foot">	
+						<div class="bottom">
+							<div class="author">TechEdu ++ Team</div>
+							<div class="organization">Tech Education ++</div>
+							<div class="webpages"><a href="https://techedu.cf">https://techedu.cfe</a></div>
+						</div>
+						
+						<div class="number"> </div>
+						<div class="follow"> </div>
+					</div>
+				</section>
+				<section>
+					<div class="head">
+						<div class="logo"></div> <div class="title">Table of Content</div>
+					</div>
+					<div class="body">
+						<ul>
+							<li>
+								What is Computer Programming?
+							</li>
+							<li>
+								Your First C# Program
+							</li>
+							<li>
+								What is .NET Framework?
+							</li>
+							<li>
+								What is Visual Studio?
+							</li>
+							<li>
+								What is MSDN Library?
+							</li>
+						</ul>
+					</div>
+					<br>
+					<br>
+					<div class="foot">	
+						<div class="number"> </div>
+						<div class="follow"> </div>
+					</div>
+				</section>
+				<section>
+					<section>
+						<div class="head">
+							<div class="logo"></div> <div class="title">What is computer programming?</div>
+						</div>
+						<div class="body">
+							<table>
+								<tr>
+									<td style="border: 2px solid red; background-color: rgba(255, 0, 0, 0.15);">
+										Computer Programming Definition
+									</td>
+									<td style="width: 43%">
+									</td>
+								</tr>
+								<tr>
+									<td style="border: 2px solid red; background-color: rgba(255, 0, 0, 0.15);" colspan="2">
+										Computer programming: creating a sequence of instructions to enable the computer to do something
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td style="text-align: right; border: 2px solid red; background-color: rgba(255, 0, 0, 0.15);">
+										Google
+									</td>
+								</tr>
+							</table>
+						</div>
+						<br>
+						<br>
+						<div class="foot">	
+							<div class="number"> </div>
+							<div class="follow"> </div>
+						</div>
+					</section>
+					<section>
+						<div class="head">
+							<div class="logo"></div> <div class="title">Some Definitions</div>
+						</div>
+						<div class="body">
+<ul>
+	<li>
+		<span style="color: orange">Define</span> a task/problem = <span style="color: orange">Specification</span>
+	</li>
+	<li>
+		<span style="color: orange">Plan</span> your solution = <span style="color: orange">Design</span>
+		<ul>
+			<li>
+				Find suitable algorithm to solve it
+			</li>
+			<li>
+				Find suitable data structures to use
+			</li>
+		</ul>
+	</li>
+	<li>
+		<span style="color: orange">Write</span> code = <span style="color: orange">Implementation</span>
+	</li>
+	<li>
+		<span style="color: orange">Fix</span> program error (bugs) = <span style="color: orange">Testing & Debugging </span>
+	</li>
+	<li>
+		<span style="color: orange">Make</span> your customer happy = <span style="color: orange">Deployment</span>
+	</li>
+
+</ul>
+						</div>
+						<br>
+						<br>
+						<div class="foot">	
+							<div class="number"> </div>
+							<div class="follow"> </div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<div class="head">
+							<div class="logo"></div> <div class="title">Your First C# Program</div>
+						</div>
+						<div class="body">
+							Sample C# program:
+							<div data-markdown>
+							```cs
+							using System;
+
+							namespace Basics
+							{
+								class HelloCSharp
+								{
+									static void Main (string[] args)
+									{
+										Console.WriteLine ("Hello, C#!");
+									}
+								}
+							}
+							```
+							</div>
+						</div>
+						<br>
+						<br>
+						<div class="foot">	
+							<div class="number"> </div>
+							<div class="follow"> </div>
+						</div>
+					</section>
+					<section>
+						<div class="head">
+							<div class="logo"></div> <div class="title">What is C#?</div>
+						</div>
+					<div class="body">
+						<big>
+							<ul>
+								<li>
+									A programming language
+									<ul>
+										<li>
+											A syntax that allow to give instructions to the computer
+										</li>
+									</ul>
+								</li>
+								<li>
+									C# features:
+									<ul>
+										<li>
+											Cutting edge language
+										</li>
+										<li>
+											Extremely powerful
+										</li>
+										<li>
+											Easy to learn
+										</li>
+										<li>
+											Easy to read and understand
+										</li>
+										<li>
+											Object-oriented
+										</li>
+									</ul>
+								</li>
+							</ul>
+							</big>
+						</div>
+						<br>
+						<br>
+						<div class="foot">	
+							<div class="number"> </div>
+							<div class="follow"> </div>
+						</div>
+					</section>
+					<section>
+						<div class="head">
+							<div class="logo"></div> <div class="title">What You Need to Program?</div>
+						</div>
+						<div class="body">
+							<big>
+								<ul>
+									<li>
+										Knowledge of a programming language
+										<ul>
+											<li>
+												C#, Javascript, C++, Java, Python, etc
+											</li>
+										</ul>
+									</li>
+									<li>
+										Task to solve
+									</li>
+									<li>
+										Development environment, compilers, SDK
+										<ul>
+											<li>
+												For C# - VisualStudio, .NET Framework SDK
+											</li>
+										</ul>
+									</li>
+									<li>
+										Set of useful standard classes
+										<ul>
+											<li>
+												Microsoft .NET Framework FCL
+											</li>
+										</ul>
+									</li>
+									<li>
+										Help documentation
+										<ul>
+											<li>
+												MSDN Library
+											</li>
+										</ul>
+									</li>
+
+								</ul>
+							</big>
+						</div>
+						<br>
+						<br>
+						<div class="foot">	
+							<div class="number"> </div>
+							<div class="follow"> </div>
+						</div>
+					</section>
+				<section>
+					<div class="head">
+						<div class="logo"></div> <div class="title">Live Demo</div>
+					</div>
+					<div class="body">
+					<center>
+						<img height="900px" src="./console.png"></img>
+					</center>
+					</div>
+					<br>
+					<br>
+					<div class="foot">	
+						<div class="number"> </div>
+						<div class="follow"> </div>
+					</div>
+				</section>
+				</section>
+				<section>
+					<div class="head">
+						<div class="logo"></div> <div class="title">Questions</div>
+					</div>
+					<div class="body">
+						<center>
+							<img height="450px" src="/presentations/questions.png"></img>
+						</center>
+					</div>
+					<br>
+					<br>
+					<div class="foot">	
+						<div class="number"> </div>
+						<div class="follow"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="/presentations/reveal.js/lib/js/head.min.js"></script>
+		<script src="/presentations/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '/presentations/reveal.js/plugin/markdown/marked.js' },
+					{ src: '/presentations/reveal.js/plugin/markdown/markdown.js' },
+					{ src: '/presentations/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: '/presentations/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script src="/presentations/reveal.js/init.js"></script>
+	</body>
+</html>

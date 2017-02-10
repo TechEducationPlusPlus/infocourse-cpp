@@ -1,0 +1,213 @@
+<html>
+	<head>
+        <meta https-equiv="content-type" content="text/html; charset=windows-1251">
+		<meta charset="utf-8">
+		<title>IT video textbook</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="/css/dropdownhover.css">
+        <link rel="stylesheet" href="/dark.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+		<div class="container">
+			<header>
+				<table style="width:100%">
+					<tr>
+						<td style="max-width: 200px">
+							<div style="position: fixed; height:100px; max-width: 20px;">
+								<img height="100px" src="/img/acdemy2_logo.png" />
+							</div>
+							<div style="visibility: hidden; height:100px; max-width: 20px;">
+								<img height="100px" src="/img/acdemy2_logo.png" />
+							</div>
+							<br>
+						</td>
+						<td>
+							<table style="width:100%;">
+								<tr>
+									<th><div class="dropdown">
+											<a class="dropbtn"><u>Lectures</u></a>
+											<div class="dropdown-content">
+												<a onclick="showlang('cpp');show('lecture');"><u id='cpp' style="color:cyan;">C++</u></a>
+												<a onclick="showlang('cs');show ('lecture');"><u id='cs'>C#</u></a>
+												<a onclick="showlang('algo');show ('lecture');"><u id='algo'>Algorithms</u></a>
+											</div>
+										</div>
+									</th>
+									<th><a onclick="show('video');"><u>Lectures Resources</u></a></th>
+									<th><a onclick="show('UsefulResources');"><u>Useful Resources</u></a></th>
+								</tr>
+								<tr>
+									<td colspan="2"> <div style="min-height: 15px;" /> </td>
+								</tr>
+								<tr>
+									<th><a onclick="show('exams');"><u>Exams</u></a></th>
+									<th><a onclick="show('homework');"><u>Homework</u></a></th>
+									<th><a onclick="show('aboutus');"><u>About us</u></a></th>
+								</tr>
+							</table> 
+						</td>
+					</tr>
+				</table>
+			</header>
+			<nav>
+                <ul>
+                    <li><a href="/index.html">Home<br></a></li>
+                    <li><a href="/profile.html">Profile<br></a></li>
+                    <li><a href="/academy.html">Academy<br></a></li>
+                    <li><a href="/courses.html">Courses<br></a></li>
+                    <li><a href="/archive.html">Archive<br><br></a></li>
+                    <li><a href="https://gitter.im/TTC-learning-System/Global?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat at https://gitter.im/TTC-learning-System/Global" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="width:140px;"></a></li>
+                </ul>
+								<div id="profile">
+									<div id="picture">
+										<img width="150px" src="/img/no-picture.png" />
+									</div>
+									<div id="devision">
+										0/1000
+									</div>
+								</div>
+			</nav>
+			<article>
+                <div id="lecture" style="display:none">
+                    <ol id="lectures_list_langs">
+                        <li>Introduction to Programming on <span class='pl'>C++</span></li>
+                    </ol>
+                    <ol id="lectures_list_algo" style="display: none;">
+                        <li>Introduction to Algorithms</li>
+                    </ol>
+                </div>
+                <div id="video" style="display:none">
+                    <table style="width:100%">
+                    <tr>
+                        <th>Video</th>
+                        <th>Presentation</th>
+                    </tr>
+                    <tr>
+                        <td class="no">No video yet</td>
+                        <td><a href="/presentations/lesson1/index.html">Not ready</a></td>
+                    </tr>
+
+                    </table>
+                </div>
+
+                <div id="homework" style="display:none">
+
+                </div>
+
+                <div id="exams" style="display:none">
+
+                </div>
+
+                <div id="UsefulResources" style="display:none">
+                    Useful links:
+                    <ol>
+                        <li><a href="https://www.math.bas.bg/infos/">INFOS</a></li>
+                        <li><a href="http://stackoverflow.com/">StackOverflow</a></li>
+                    </ol>
+                </div>
+
+                <div id="aboutus" style="display:block">
+                    <table>
+                        <tr>
+                            <th style="border: 3px solid rgba(0,0,0,0)">
+                                <img width="150px" src="/img/main.jpg" /><br>
+                                Alex Tsvetanov<br>
+                            </th>
+														<td style="text-align: left;">
+															<h3><strong>Team leader</strong></h3>
+															Developer, Contestant in Informatics<br>
+															Designer<br>
+															Data Bases and Server Support<br><br>
+															<strong>Trainer</strong><br>
+														</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 3px solid rgba(0,0,0,0)">
+                                <img width="150px" src="/bases/aboutus/dimo.jpg" /><br>
+                                Dimo Chanev<br>
+                            </th>
+														<td style="text-align: left;">
+															<h3><strong>Technical Support</strong></h3>
+															Developer, Contestant in Informatics<br><br>
+															Admin of <strong>Testing System</strong>
+														</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 3px solid rgba(0,0,0,0)">
+                                <img width="150px" src="/bases/aboutus/delian.jpg" /><br>
+                                Delian Pirinski <br>
+                            </th>
+														<td style="text-align: left;">
+															<h3><strong>Trainer</strong></h3>
+														</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 3px solid rgba(0,0,0,0)">
+                                <img width="150px" src="/bases/aboutus/crasy.jpg" /><br>
+                                Crasy Paskalev <br>
+                            </th>
+														<td style="text-align: left;">
+															<h3><strong>Trainer</strong></h3>
+														</td>
+                        </tr>
+                        <tr>
+                            <th style="border: 3px solid rgba(0,0,0,0)">
+                                <img width="150px" src="/bases/aboutus/tinchev.jpg" /><br>Vasil Tinchev
+                            </th>
+														<td style="text-align: left;">
+															<h3>Coordinator</h3>
+														</td>
+                        </tr>
+												<tr>
+                            <th style="border: 3px solid rgba(0,0,0,0)">
+															<a href="http://www.testraih.info">
+                                <img width="150px" src="/bases/aboutus/verdinandov.jpg" /><br>Krasen Ferdinandov
+															</a>
+                            </th>
+														<td style="text-align: left;">
+															<h3><strong>Technical Support</strong></h3>
+															Data Bases and Server Support <br><br>
+														</td>
+                        </tr>
+                    </table>
+                </div>
+			</article>
+			<footer>
+                Follow us<br> 
+                <a href="https://github.com/TTechnologiesGroup" alt="GitHub"><img height="50px" src="/img/github.png" /></a> <br><br>
+                Copyright © T Technologies Company
+			</footer>
+		</div>
+        <script type="text/javascript">
+            var id_to_show = "aboutus";
+            var lang = 'cpp';
+
+            function show (to_show)
+            {
+                document.getElementById (id_to_show).style.display="none";
+                document.getElementById (id_to_show = to_show).style.display="block";
+            }
+
+            function showlang (to_show)
+            {
+                document.getElementById (lang).style ="";
+                document.getElementById (lang = to_show).style.color="cyan";
+                if (to_show == "algo")
+                {
+                    document.getElementById ("lectures_list_algo").style.display = "block";
+                    document.getElementById ("lectures_list_langs").style.display = "none";
+                }
+                else
+                {
+                    document.getElementById ("lectures_list_algo").style.display = "none";
+                    document.getElementById ("lectures_list_langs").style.display = "block";
+                    var to_change = document.getElementsByClassName ('pl');
+                    for (var i = 0 ; i < to_change.length ; i ++)
+                        to_change [i].innerHTML = (lang == 'cpp')?"C++":"C#";
+                }
+            }
+        </script>
+	</body>
+</html>

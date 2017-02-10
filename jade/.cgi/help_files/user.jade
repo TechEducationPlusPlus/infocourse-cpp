@@ -1,0 +1,36 @@
+block classes
+	- var homeclass = undefined
+	- var userclass = '.active'
+	- var chatclass = undefined
+	- var contactclass = undefined
+	- var aboutclass = undefined
+
+extends ../../template
+
+block jumbotron
+
+block container
+	link(href='/css/slider.css', rel='stylesheet')
+	.container
+		// Example row of columns
+		.row
+			.col-md-4
+				h2 $NAME$
+				p $DESCRIPTION$
+				.onoffswitch
+					input#myonoffswitch.onoffswitch-checkbox(type='checkbox', name='onoffswitch', checked='')
+					label.onoffswitch-label(for='myonoffswitch')
+						span.onoffswitch-inner
+						span.onoffswitch-switch
+				p
+					| Password: $PASSWORD$ 
+					a(href='#') (change password)
+				p
+					| E-mail: $EMAIL$ 
+					a(href='#') (change e-mail)
+				.onoffswitch
+					input#myonoffswitch1.onoffswitch-checkbox(type='checkbox', name='onoffswitch', checked='')
+					label.onoffswitch-label(for='myonoffswitch1')
+						span.onoffswitch-inner
+						span.onoffswitch-switch
+

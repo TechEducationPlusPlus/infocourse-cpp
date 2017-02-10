@@ -1,0 +1,1 @@
+g++ main.cpp -o startup -lmysqlclient -lfcgi++ -lfcgi -lcurl -lcurlpp -ljsoncpp -std=c++11 -I. -lssl -lcrypto -I./rapidjson/include

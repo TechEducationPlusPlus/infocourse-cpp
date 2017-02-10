@@ -1,0 +1,152 @@
+<style>
+html
+{
+	height: 100%;
+	font: Monospace 20;
+}
+
+body 
+{
+	background-color: white;
+	color: black;
+	height: 100%;
+}
+#my-node
+{
+	background-image: url(/home/alex/Downloads/cert.png);
+	color: #6C1D00;
+	width: 1600px; 
+	height: 1200px;
+	text-align: center; 
+	border: 10px solid #787878;
+}
+#cert
+{
+	position: fixed;
+	left: 423px;
+	top: 175px;
+	width: 1142px;
+	text-align: left;
+}
+.company
+{
+	position: fixed;
+	left: 40px;
+	top: 1050px;
+	text-align: left;
+	font-size: 75pt;
+	float: left;
+}
+.sig
+{
+	bottom: 110px;
+	left: 1320px;
+	position: fixed;
+	font-size: 40pt;
+	border-top: 5px solid #6C1D00;
+	float: right;
+		/*
+	-ms-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+		*/
+}
+
+.date
+{
+	position: fixed; 
+	top: 1050px; 
+	left: 433px; 
+	text-align: left;
+}
+
+#certificate
+{
+	font-size: 100pt;
+	text-align: left;
+}
+
+#content
+{
+	border-top: 40px solid rgba(0,0,0,0);
+	text-align: center;
+}
+
+table, tbody, tr, td, th
+{
+	color: #6C1D00;
+}
+table
+{
+	width: 1042px;
+	text-align: center;
+}
+
+th
+{
+	text-align: right;
+	border-left: 15px solid rgba(0,0,0,0);
+}
+
+</style>
+<body>
+	<div id="my-node">
+	   <div class="company">
+		   <img src="http://techedu.cf/img/logo2.png" width="237px">
+	   </div>
+	   <div id="cert">
+		   <span id="certificate">Certificate</span>
+		   <br><br>
+		   <div id="content">
+			   <table><tbody>
+			   <tr>
+				   <td><span style="font-size:30px"><i>This is to certify that  </i></span></td>
+				   <th><span style="font-size:50px">Alex Tsvetanov</span></th>
+			   </tr>
+			   <tr>
+				   <td><span style="font-size:30px"><i>has completed the course  </i></span></td>
+				   <th><span style="font-size:50px"> C++</span></th>
+			   </tr>
+			   <tr>
+				   <td><span style="font-size:30px">with score of  </span></td>
+				   <th><span style="font-size:50px">100%</span></th>
+			   </tr>
+		   </div>
+	   </div>
+	   <div class="date">
+		   <span style="font-size:50px"><i>dated</i></span><br>
+		   <span style="font-size:55px">January 12 2016</span>
+	   </div>
+	   <div class="sig">
+		   <i>signature</i>
+		   <br>
+	   </div>
+	</div>
+
+<script src="./bower_components/dom-to-image/dist/dom-to-image.min.js"></script>
+<script type="text/javascript">
+var node = document.getElementById('my-node');
+var image_url_by_data_png = "";
+
+domtoimage.toPng(node)
+    .then(function (dataUrl) {
+        var img = new Image();
+		if (image_url_by_data_png == "")
+			image_url_by_data_png = dataUrl;
+        img.src = dataUrl;
+        document.body.appendChild(img);
+    })
+    .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    });
+
+function update ()
+{
+	if (image_url_by_data_png != "")
+		document.body.innerHTML = "<img src='" + image_url_by_data_png + "' />" ;
+    setTimeout (update, 10);
+}
+
+update ();
+</script>
+</body>

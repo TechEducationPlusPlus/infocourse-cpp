@@ -1,0 +1,63 @@
+block classes
+	- var homeclass = undefined
+	- var userclass = undefined
+	- var chatclass = undefined
+	- var contactclass = undefined
+	- var aboutclass = '.active'
+
+extends template
+
+block jumbotron
+	br
+	br
+	a.btn.btn-primary.btn-lg(href='/presentations/UchIMI', role='button') Presentation
+
+block container
+	.container
+		.row
+			.col-md-4(style='height: 450px;')
+				a.normal(href='https://tsalex.tk')
+					img(height='150px', src='/img/main.jpg')
+					h2 Alex Tsvetanov
+				br
+				h3 Team leader
+				p Developer, Contestant in Informatics
+				p Designer
+				p DataBases and Server Support
+				h3 Trainer
+			.col-md-4(style='height: 450px;')
+				a.normal(href='https://tsalex.tk')
+					img(height='150px', src='/aboutus/aboutus/dimo.jpg')
+					h2 Dimo Chanev
+				br
+				h3 Technical Support
+				p Developer, Contestant in Informatics
+				h3
+					| Admin of 
+					strong "The Judgata"
+			.col-md-4(style='height: 450px;')
+				img(height='150px', src='/aboutus/aboutus/delian.jpg')
+				h2 Delian Pirinski
+				br
+				h3 Trainer
+				p Sofia High School of Matematics
+			.col-md-4(style='height: 450px;')
+				img(height='150px', src='/aboutus/aboutus/crasy.jpg')
+				h2 Krassi Paskalev
+				br
+				h3 Trainer
+				p Sofia High School of Matematics
+			.col-md-4(style='height: 450px;')
+				img(height='150px', src='/aboutus/aboutus/tinchev.jpg')
+				h2 Vasil Tinchev
+				br
+				h3 Coordinator
+				p Sofia High School of Matematics
+			.col-md-4(style='height: 450px;')
+				a.normal(href='http://www.testrain.info')
+					img(height='150px', src='/aboutus/aboutus/verdinandov.jpg')
+					h2 Krasen Ferdinandov
+				br
+				h3 Technical Support
+				p DataBases and Server Support
+				p Sofia High School of Matematics

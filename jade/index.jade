@@ -1,0 +1,32 @@
+block classes
+	- var homeclass = '.active'
+	- var userclass = undefined
+	- var chatclass = undefined
+	- var contactclass = undefined
+	- var aboutclass = undefined
+
+extends template
+
+block jumbotron
+
+block container
+	.container
+		.row
+			.col-md-4
+				h2 C++
+				p These courses can teach you how to programming in C++.
+				p
+					a.btn.btn-secondary(href='./course/cpp.html', role='button') View details »
+			.col-md-4
+				h2 C#
+				p These courses can teach you how to programming in C#.
+				p
+					a.btn.btn-secondary(href='./courses/cs.html', role='button') View details »
+			.col-md-4
+				h2 Algorithms
+				p
+					| These courses is about algorithms.
+					br
+					| Graph Teory, etc.
+				p
+					a.btn.btn-secondary(href='./courses/algo.html', role='button') View details »
